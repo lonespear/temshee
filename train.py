@@ -115,7 +115,7 @@ def main():
     model.learn(
         total_timesteps=args.steps,
         callback=callback,
-        progress_bar=True,
+        progress_bar=False,
         reset_num_timesteps=args.resume is None,
     )
 
