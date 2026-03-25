@@ -1,0 +1,14 @@
+# Core
+stable-baselines3[extra]
+gymnasium[box2d]
+
+# Video
+imageio[ffmpeg]
+
+# Dashboard
+flask
+
+# Note: gymnasium[box2d] requires SWIG.
+# If pip install fails, install SWIG first:
+#   Windows: pip install swig
+#   Then retry: pip install gymnasium[box2d]

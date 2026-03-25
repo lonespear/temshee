@@ -1,0 +1,6 @@
+checkpoints/
+snapshots/
+metrics.json
+__pycache__/
+*.pyc
+.env
