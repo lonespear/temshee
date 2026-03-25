@@ -96,6 +96,7 @@ def main():
             "MlpPolicy",
             env,
             verbose=0,
+            device="cpu",
             n_steps=2048,
             batch_size=64,
             n_epochs=10,
