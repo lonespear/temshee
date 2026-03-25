@@ -54,7 +54,7 @@ class WalkerCallback:
         env.close()
 
         out_path = os.path.join("snapshots", f"step_{step:08d}.mp4")
-        writer = imageio.get_writer(out_path, fps=30)
+        writer = imageio.get_writer(out_path, fps=30, macro_block_size=1)
         for frame in frames:
             writer.append_data(frame)
         writer.close()
