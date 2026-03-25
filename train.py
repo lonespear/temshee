@@ -10,6 +10,9 @@ from stable_baselines3.common.env_util import make_vec_env
 
 METRICS_FILE = "metrics.json"
 
+os.makedirs("checkpoints", exist_ok=True)
+os.makedirs("snapshots", exist_ok=True)
+
 
 class WalkerCallback:
     """Manual callback wired into learn() via callback= parameter."""
